@@ -1,0 +1,159 @@
+
+<html >
+ <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About Me</title>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet"/>
+  <style>
+        body{
+            font-family: 'Roboto', sans-serif;
+            background-color: #f8f9fa;
+            margin-top: 6rem;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .navbar {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            z-index: 1;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 50px;
+            background-color: #333;
+        }
+        .navbar .nav-links {
+            display: flex;
+            gap: 30px;
+        }
+        .navbar .nav-links a {
+            text-decoration: none;
+            color: #fff;
+            font-size: 16px;
+        }
+        .navbar .nav-links a.active {
+            color: #e63946;
+        } 
+
+        .container {
+            display: flex;
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            max-width: 900px;
+            width: 100%;
+        }
+        .image-section {
+            flex: 1;
+            padding: 20px;
+            margin: 20px;
+        }
+        .image-section img {
+            width: 100%;
+            height: 32rem;
+            object-fit: cover;
+            border-radius: none;
+        }
+        .content-section {
+            flex: 1.5;
+            padding: 40px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+        .content-section h1 {
+            font-size: 36px;
+            margin: 0;
+            font-weight: 700;
+        }
+        .content-section h1 span {
+            color: #f05454;
+        }
+        .content-section p {
+            font-size: 16px;
+            color: #6c757d;
+            line-height: 1.6;
+            margin: 20px 0;
+        }
+        .content-section ul {
+            list-style: none;
+            padding: 0;
+            margin: 20px 0;
+        }
+        .content-section ul li {
+            font-size: 16px;
+            margin: 10px 0;
+            display: flex;
+            align-items: center;
+        }
+        .content-section ul li i {
+            color: #f05454;
+            margin-right: 10px;
+        }
+        .content-section .btn {
+            background-color: #f05454;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+            cursor: pointer;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            margin-top: 20px;
+        }
+  </style>
+ </head>
+
+ <body>
+    <div class="navbar">
+        <div class="nav-links">
+            <a href="./index.html">Home</a>
+            <a href="./about-me.html" class="active">About</a>
+            <a href="./portfolio.html">Portfolio</a>
+            <a href="./skills.html">Skills</a>
+            <a href="./contact.html">Contact</a>
+        </div>
+    </div>
+
+  <div class="container">
+    
+   <div class="image-section">
+        <img alt="Portrait of a person" height="600" src="./IMG_1912uuu.JPG" width="450"/>
+   </div>
+   <div class="content-section">
+        <h1>ABOUT<span>ME</span></h1>
+        <p>Hello! I'm Muhammad Bilal Farid. I'm a web developer, and I'm very passionate and dedicated to my work. With 2 years experience as a professional web developer, I have acquired the skills and knowledge necessary to make your project a success. I enjoy every step of the design process, from discussion and collaboration.</p>
+        
+        <ul>
+            <li>
+                <i class="fas fa-chevron-right"></i>
+                Software Engineering
+            </li>
+
+            <li>
+                <i class="fas fa-chevron-right"></i>
+                Web Development
+            </li>
+
+            <li>
+                <i class="fas fa-chevron-right"></i>
+                UI/UX Designing
+            </li>
+
+            <li>
+                <i class="fas fa-chevron-right"></i>
+                Data Engineering
+            </li>
+        
+        </ul>

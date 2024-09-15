@@ -1,0 +1,160 @@
+<html>
+<head>
+    <title>Contact Page</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+        }
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 50px;
+            background-color: #333;
+        }
+        .navbar .nav-links {
+            display: flex;
+            gap: 30px;
+        }
+        .navbar .nav-links a {
+            text-decoration: none;
+            color: #fff;
+            font-size: 16px;
+        }
+        .navbar .nav-links a.active {
+            color: #e63946;
+        }
+        .header {
+            text-align: center;
+            padding: 20px 0;
+            background-color: #fff;
+            border-bottom: 1px solid #ddd;
+        }
+        .header h1 {
+            margin: 0;
+            font-size: 36px;
+            font-weight: 700;
+            font-family: 'Roboto', sans-serif;
+            color: #333;
+        }
+        span{
+            color: red;
+        }
+        .container {
+            display: flex;
+            justify-content: space-between;
+            padding: 50px;
+        }
+        .contact-info {
+            max-width: 50%;
+        }
+        .contact-info p {
+            color: #888;
+            line-height: 1.6;
+        }
+        .contact-info ul {
+            list-style: none;
+            padding: 0;
+        }
+        .contact-info ul li {
+            margin-bottom: 15px;
+            font-size: 16px;
+            color: #333;
+        }
+        .contact-info ul li i {
+            margin-right: 10px;
+            color: #333;
+        }
+        .contact-form {
+            max-width: 40%;
+        }
+        .contact-form input, .contact-form textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+        .contact-form button {
+            background-color: #f44336;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .footer {
+            background-color: #000;
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+            position: relative;
+        }
+        .footer .social-icons {
+            margin: 20px 0;
+        }
+        .footer .social-icons a {
+            margin: 0 10px;
+            color: white;
+            font-size: 20px;
+            cursor: pointer;
+            text-decoration: none;
+        }
+        .footer .copyright {
+            font-size: 14px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="navbar">
+        <div class="nav-links">
+            <a href="./index.html">Home</a>
+            <a href="./about-me.html">About</a>
+            <a href="./portfolio.html">Portfolio</a>
+            <a href="./skills.html">Skills</a>
+            <a href="./contact.html" class="active">Contact</a>
+        </div>
+    </div>
+
+    <div class="header">
+        <h1>Contact <span>Me</span></h1>
+    </div>
+
+    <div class="container">
+        <div class="contact-info">
+            <p>Please fill out the form on this section to contact with me. Or call between 9:00 a.m. and 8:00 p.m. ET, Monday through Friday</p>
+            <ul>
+                <li><i class="fas fa-map-marker-alt"></i> Address: Drosh II, KPK, Pakistan</li>
+                <li><i class="fas fa-envelope"></i> Email: bilal.drosh031@gmail.com</li>
+                <li><i class="fas fa-phone"></i> Phone: +92 346 4619093</li>
+                <li><i class="fas fa-globe"></i> Website: www.xyz.com</li>
+            </ul>
+        </div>
+        <div class="contact-form">
+            <input type="text" placeholder="Name">
+            <input type="email" placeholder="Email">
+            <textarea placeholder="Message" rows="5"></textarea>
+            <button>Send Message</button>
+        </div>
+    </div>
+    
+    <div class="footer">
+        <div class="social-icons">
+            <a href="#"><i class="fab fa-facebook"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-linkedin"></i></a>
+            <a href="#"><i class="fab fa-github"></i></a>
+            <a href="#"><i class="fab fa-tiktok"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+        </div>
+        <div class="copyright">
+            © COPYRIGHT 2024 BY BILAL Enterprises
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,194 @@
+<html>
+<head>
+    <title>Skills and Freelance Work</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Arial', sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 50px;
+            background-color: #333;
+        }
+        .navbar .nav-links {
+            display: flex;
+            gap: 30px;
+        }
+        .navbar .nav-links a {
+            text-decoration: none;
+            color: #fff;
+            font-size: 16px;
+        }
+        .navbar .nav-links a.active {
+            color: #e63946;
+        } 
+
+        .container {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            padding: 50px;
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            margin: 50px;
+            border-radius: 10px;
+        }
+        .text-section {
+            max-width: 50%;
+        }
+        .text-section h1 {
+            font-size: 36px;
+            font-weight: bold;
+            margin: 0 0 20px 0;
+            color: #e74c3c;
+        }
+        .text-section p {
+            font-size: 16px;
+            color: #666;
+            line-height: 1.5;
+        }
+        .skills-section {
+            max-width: 40%;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+        th, td {
+            padding: 10px;
+            text-align: left;
+            border-bottom: 1px solid #ddd;
+        }
+        th {
+            background-color: #e74c3c;
+            color: white;
+        }
+        td {
+            color: #333;
+        }
+        .footer {
+            background-color: #000;
+            color: #fff;
+            text-align: center;
+            padding: 50px 0;
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            margin-top: 50px;
+        }
+        .footer::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 100%;
+            background: url('https://placehold.co/1920x1080') repeat;
+            opacity: 0.1;
+        }
+        .footer h2 {
+            font-size: 24px;
+            margin: 0 0 20px 0;
+            position: relative;
+        }
+        .footer a {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #e74c3c;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 5px;
+            font-size: 14px;
+            font-weight: bold;
+            position: relative;
+        }
+        .footer h2::after {
+            content: '';
+            animation: typing 2s steps(4, end) infinite;
+        }
+        .marquee {
+            width: 100%;
+            overflow: hidden;
+            white-space: nowrap;
+            box-sizing: border-box;
+            margin-bottom: 20px;
+        }
+        .marquee span {
+            display: inline-block;
+            padding-left: 100%;
+            animation: marquee 20s linear infinite;
+            font-size: 24px;
+        }
+        @keyframes marquee {
+            0% {
+                transform: translate(0, 0);
+            }
+            100% {
+                transform: translate(-100%, 0);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="navbar">
+        <div class="nav-links">
+            <a href="./index.html">Home</a>
+            <a href="./about-me.html">About</a>
+            <a href="./portfolio.html">Portfolio</a>
+            <a href="./skills.html" class="active">Skills</a>
+            <a href="./contact.html">Contact</a>
+        </div>
+    </div>
+    <div class="container">
+        <div class="text-section">
+            <h1>I have high skills in developing and programming</h1>
+            <p>I was doing everything in my power to provide me with all the experiences to provide cost-effective and high quality products to satisfy my customers all over the world</p>
+        </div>
+        <div class="skills-section">
+            <table>
+                <tr>
+                    <th>Skill</th>
+                    <th>Proficiency</th>
+                </tr>
+                <tr>
+                    <td>Web Development</td>
+                    <td>95%</td>
+                </tr>
+                <tr>
+                    <td>Web Design</td>
+                    <td>85%</td>
+                </tr>
+                <tr>
+                    <td>Brand Identity</td>
+                    <td>80%</td>
+                </tr>
+                <tr>
+                    <td>Logo Design</td>
+                    <td>90%</td>
+                </tr>
+                <tr>
+                    <td>SEO Optimization</td>
+                    <td>75%</td>
+                </tr>
+            </table>
+        </div>
+    </div>
+    
+    <div class="footer">
+        <div class="marquee">
+            <span>I'm available for freelance work_ I'm available for freelance work_I'm available for freelance work_</span>
+        </div>
+        <a href="./contact.html">Contact Me</a>
+    </div>
+</body>
+</html>
