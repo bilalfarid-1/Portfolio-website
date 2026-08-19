@@ -1,194 +1,240 @@
-<html>
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
 <head>
-    <title>Skills and Freelance Work</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
-    <style>
-        body {
-            margin: 0;
-            font-family: 'Arial', sans-serif;
-            background-color: #f4f4f4;
-            color: #333;
-        }
-
-        .navbar {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            padding: 20px 50px;
-            background-color: #333;
-        }
-        .navbar .nav-links {
-            display: flex;
-            gap: 30px;
-        }
-        .navbar .nav-links a {
-            text-decoration: none;
-            color: #fff;
-            font-size: 16px;
-        }
-        .navbar .nav-links a.active {
-            color: #e63946;
-        } 
-
-        .container {
-            display: flex;
-            justify-content: space-between;
-            align-items: flex-start;
-            padding: 50px;
-            background-color: #fff;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-            margin: 50px;
-            border-radius: 10px;
-        }
-        .text-section {
-            max-width: 50%;
-        }
-        .text-section h1 {
-            font-size: 36px;
-            font-weight: bold;
-            margin: 0 0 20px 0;
-            color: #e74c3c;
-        }
-        .text-section p {
-            font-size: 16px;
-            color: #666;
-            line-height: 1.5;
-        }
-        .skills-section {
-            max-width: 40%;
-        }
-        table {
-            width: 100%;
-            border-collapse: collapse;
-            margin-top: 20px;
-        }
-        th, td {
-            padding: 10px;
-            text-align: left;
-            border-bottom: 1px solid #ddd;
-        }
-        th {
-            background-color: #e74c3c;
-            color: white;
-        }
-        td {
-            color: #333;
-        }
-        .footer {
-            background-color: #000;
-            color: #fff;
-            text-align: center;
-            padding: 50px 0;
-            position: relative;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            margin-top: 50px;
-        }
-        .footer::before {
-            content: '';
-            position: absolute;
-            top: 0;
-            left: 0;
-            right: 0;
-            height: 100%;
-            background: url('https://placehold.co/1920x1080') repeat;
-            opacity: 0.1;
-        }
-        .footer h2 {
-            font-size: 24px;
-            margin: 0 0 20px 0;
-            position: relative;
-        }
-        .footer a {
-            display: inline-block;
-            padding: 10px 20px;
-            background-color: #e74c3c;
-            color: #fff;
-            text-decoration: none;
-            border-radius: 5px;
-            font-size: 14px;
-            font-weight: bold;
-            position: relative;
-        }
-        .footer h2::after {
-            content: '';
-            animation: typing 2s steps(4, end) infinite;
-        }
-        .marquee {
-            width: 100%;
-            overflow: hidden;
-            white-space: nowrap;
-            box-sizing: border-box;
-            margin-bottom: 20px;
-        }
-        .marquee span {
-            display: inline-block;
-            padding-left: 100%;
-            animation: marquee 20s linear infinite;
-            font-size: 24px;
-        }
-        @keyframes marquee {
-            0% {
-                transform: translate(0, 0);
-            }
-            100% {
-                transform: translate(-100%, 0);
-            }
-        }
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Skills & Tech Stack | Muhammad Bilal Farid</title>
+  <meta name="description" content="Detailed skills, technologies, databases, and frameworks utilized by Muhammad Bilal Farid.">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="stylesheet" href="./assets/css/main.css">
 </head>
 <body>
-    <div class="navbar">
-        <div class="nav-links">
-            <a href="./index.html">Home</a>
-            <a href="./about-me.html">About</a>
-            <a href="./portfolio.html">Portfolio</a>
-            <a href="./skills.html" class="active">Skills</a>
-            <a href="./contact.html">Contact</a>
-        </div>
+  <!-- Header -->
+  <header class="navbar scrolled">
+    <div class="container nav-container">
+      <a href="./index.html" class="nav-logo">
+        <span class="logo-badge">BF</span>
+        <span>BILAL</span>
+      </a>
+
+      <nav>
+        <ul class="nav-links">
+          <li><a href="./index.html#hero" class="nav-link">Home</a></li>
+          <li><a href="./about-me.html" class="nav-link">About</a></li>
+          <li><a href="./portfolio.html" class="nav-link">Portfolio</a></li>
+          <li><a href="./skills.html" class="nav-link active">Skills</a></li>
+          <li><a href="./index.html#timeline" class="nav-link">Experience</a></li>
+          <li><a href="./contact.html" class="nav-link">Contact</a></li>
+        </ul>
+      </nav>
+
+      <div class="nav-actions">
+        <button class="theme-toggle-btn" aria-label="Toggle dark/light theme">
+          <i class="fas fa-sun"></i>
+        </button>
+        <a href="./contact.html" class="btn-nav-hire">
+          <i class="fas fa-paper-plane"></i>
+          <span>Let's Talk</span>
+        </a>
+        <button class="menu-toggle" aria-label="Toggle mobile menu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
     </div>
-    <div class="container">
-        <div class="text-section">
-            <h1>I have high skills in developing and programming</h1>
-            <p>I was doing everything in my power to provide me with all the experiences to provide cost-effective and high quality products to satisfy my customers all over the world</p>
+  </header>
+
+  <!-- Mobile Drawer -->
+  <div class="mobile-nav">
+    <ul class="mobile-nav-links">
+      <li><a href="./index.html" class="mobile-nav-link">Home</a></li>
+      <li><a href="./about-me.html" class="mobile-nav-link">About Me</a></li>
+      <li><a href="./portfolio.html" class="mobile-nav-link">Portfolio</a></li>
+      <li><a href="./skills.html" class="mobile-nav-link active">Skills</a></li>
+      <li><a href="./contact.html" class="mobile-nav-link">Contact</a></li>
+    </ul>
+  </div>
+
+  <main style="padding-top: 100px;">
+    <section id="skills" class="section">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag"><i class="fas fa-bolt"></i> Technical Capabilities</span>
+          <h1 class="section-title">Skills & <span class="gradient-text">Proficiency Matrix</span></h1>
+          <p class="section-subtitle">A comprehensive breakdown of engineering languages, architectures, tools, and platforms.</p>
         </div>
-        <div class="skills-section">
-            <table>
-                <tr>
-                    <th>Skill</th>
-                    <th>Proficiency</th>
-                </tr>
-                <tr>
-                    <td>Web Development</td>
-                    <td>95%</td>
-                </tr>
-                <tr>
-                    <td>Web Design</td>
-                    <td>85%</td>
-                </tr>
-                <tr>
-                    <td>Brand Identity</td>
-                    <td>80%</td>
-                </tr>
-                <tr>
-                    <td>Logo Design</td>
-                    <td>90%</td>
-                </tr>
-                <tr>
-                    <td>SEO Optimization</td>
-                    <td>75%</td>
-                </tr>
-            </table>
+
+        <div class="skills-categories-grid">
+          <!-- Category 1 -->
+          <div class="skills-category-card">
+            <div class="category-card-header">
+              <div class="category-icon" style="background: linear-gradient(135deg, #06b6d4, #3b82f6);">
+                <i class="fas fa-code"></i>
+              </div>
+              <h3 class="category-title">Programming Languages</h3>
+            </div>
+            <div class="skills-list">
+              <div class="skill-item">
+                <div class="skill-meta">
+                  <span>Python (FastAPI, Scikit-Learn, Playwright)</span>
+                  <span class="skill-percent">95%</span>
+                </div>
+                <div class="progress-track"><div class="progress-bar-fill" data-width="95%"></div></div>
+              </div>
+              <div class="skill-item">
+                <div class="skill-meta">
+                  <span>JavaScript & TypeScript (ES6+)</span>
+                  <span class="skill-percent">90%</span>
+                </div>
+                <div class="progress-track"><div class="progress-bar-fill" data-width="90%"></div></div>
+              </div>
+              <div class="skill-item">
+                <div class="skill-meta">
+                  <span>Dart / Flutter</span>
+                  <span class="skill-percent">85%</span>
+                </div>
+                <div class="progress-track"><div class="progress-bar-fill" data-width="85%"></div></div>
+              </div>
+              <div class="skill-item">
+                <div class="skill-meta">
+                  <span>Java / Object-Oriented Design</span>
+                  <span class="skill-percent">82%</span>
+                </div>
+                <div class="progress-track"><div class="progress-bar-fill" data-width="82%"></div></div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Category 2 -->
+          <div class="skills-category-card">
+            <div class="category-card-header">
+              <div class="category-icon" style="background: linear-gradient(135deg, #8b5cf6, #4f46e5);">
+                <i class="fas fa-network-wired"></i>
+              </div>
+              <h3 class="category-title">Backend & Microservices</h3>
+            </div>
+            <div class="skills-list">
+              <div class="skill-item">
+                <div class="skill-meta">
+                  <span>FastAPI & Pydantic Validation</span>
+                  <span class="skill-percent">94%</span>
+                </div>
+                <div class="progress-track"><div class="progress-bar-fill" data-width="94%"></div></div>
+              </div>
+              <div class="skill-item">
+                <div class="skill-meta">
+                  <span>REST API Design & OpenAPI Documentation</span>
+                  <span class="skill-percent">95%</span>
+                </div>
+                <div class="progress-track"><div class="progress-bar-fill" data-width="95%"></div></div>
+              </div>
+              <div class="skill-item">
+                <div class="skill-meta">
+                  <span>SQLAlchemy ORM & Database Migration</span>
+                  <span class="skill-percent">90%</span>
+                </div>
+                <div class="progress-track"><div class="progress-bar-fill" data-width="90%"></div></div>
+              </div>
+              <div class="skill-item">
+                <div class="skill-meta">
+                  <span>JWT Auth, Security & Rate Limiting</span>
+                  <span class="skill-percent">92%</span>
+                </div>
+                <div class="progress-track"><div class="progress-bar-fill" data-width="92%"></div></div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Category 3 -->
+          <div class="skills-category-card">
+            <div class="category-card-header">
+              <div class="category-icon" style="background: linear-gradient(135deg, #10b981, #0d9488);">
+                <i class="fas fa-brain"></i>
+              </div>
+              <h3 class="category-title">Machine Learning & Automation</h3>
+            </div>
+            <div class="skills-list">
+              <div class="skill-item">
+                <div class="skill-meta">
+                  <span>Scikit-Learn, Regression & Classification</span>
+                  <span class="skill-percent">92%</span>
+                </div>
+                <div class="progress-track"><div class="progress-bar-fill" data-width="92%"></div></div>
+              </div>
+              <div class="skill-item">
+                <div class="skill-meta">
+                  <span>XGBoost & LightGBM Ensembles</span>
+                  <span class="skill-percent">90%</span>
+                </div>
+                <div class="progress-track"><div class="progress-bar-fill" data-width="90%"></div></div>
+              </div>
+              <div class="skill-item">
+                <div class="skill-meta">
+                  <span>Playwright & Async Web Scraping</span>
+                  <span class="skill-percent">94%</span>
+                </div>
+                <div class="progress-track"><div class="progress-bar-fill" data-width="94%"></div></div>
+              </div>
+              <div class="skill-item">
+                <div class="skill-meta">
+                  <span>SHAP Explainability & Imbalanced Data (SMOTE)</span>
+                  <span class="skill-percent">90%</span>
+                </div>
+                <div class="progress-track"><div class="progress-bar-fill" data-width="90%"></div></div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Category 4 -->
+          <div class="skills-category-card">
+            <div class="category-card-header">
+              <div class="category-icon" style="background: linear-gradient(135deg, #f59e0b, #ea580c);">
+                <i class="fas fa-database"></i>
+              </div>
+              <h3 class="category-title">Databases & DevOps</h3>
+            </div>
+            <div class="skills-list">
+              <div class="skill-item">
+                <div class="skill-meta">
+                  <span>PostgreSQL & SQLite Optimization</span>
+                  <span class="skill-percent">90%</span>
+                </div>
+                <div class="progress-track"><div class="progress-bar-fill" data-width="90%"></div></div>
+              </div>
+              <div class="skill-item">
+                <div class="skill-meta">
+                  <span>Redis Caching & In-Memory Storage</span>
+                  <span class="skill-percent">88%</span>
+                </div>
+                <div class="progress-track"><div class="progress-bar-fill" data-width="88%"></div></div>
+              </div>
+              <div class="skill-item">
+                <div class="skill-meta">
+                  <span>Docker Containerization & Compose</span>
+                  <span class="skill-percent">84%</span>
+                </div>
+                <div class="progress-track"><div class="progress-bar-fill" data-width="84%"></div></div>
+              </div>
+              <div class="skill-item">
+                <div class="skill-meta">
+                  <span>Git, GitHub Actions & Test Automation</span>
+                  <span class="skill-percent">92%</span>
+                </div>
+                <div class="progress-track"><div class="progress-bar-fill" data-width="92%"></div></div>
+              </div>
+            </div>
+          </div>
         </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-content">
+      <p class="footer-copyright">&copy; 2026 Muhammad Bilal Farid. All rights reserved.</p>
     </div>
-    
-    <div class="footer">
-        <div class="marquee">
-            <span>I'm available for freelance work_ I'm available for freelance work_I'm available for freelance work_</span>
-        </div>
-        <a href="./contact.html">Contact Me</a>
-    </div>
+  </footer>
+
+  <script src="./assets/js/projects-data.js"></script>
+  <script src="./assets/js/main.js"></script>
 </body>
 </html>
