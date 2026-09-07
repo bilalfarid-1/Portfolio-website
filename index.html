@@ -3,57 +3,60 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Muhammad Bilal Farid | Full-Stack & ML Engineer</title>
-  <meta name="description" content="Portfolio of Muhammad Bilal Farid - Senior Full-Stack Developer, Machine Learning Engineer, and Python/FastAPI Specialist.">
-  <meta name="keywords" content="Muhammad Bilal Farid, Full-Stack Engineer, Machine Learning, Python, FastAPI, React, Flutter, Scikit-Learn, Web Scraping, Portfolio">
+  <title>Muhammad Bilal Farid | Full-Stack & ML Engineer Portfolio</title>
+  <meta name="description" content="Muhammad Bilal Farid - Full-Stack Developer & Machine Learning Engineer Portfolio. Explore AI pipelines, FastAPI backends, React web apps, and automation scrapers.">
+  <meta name="keywords" content="Muhammad Bilal Farid, Master Portfolio, Full-Stack Developer, Machine Learning Engineer, Python, FastAPI, React, Scikit-Learn, Playwright, Drosh, Pakistan">
   <meta name="author" content="Muhammad Bilal Farid">
 
   <!-- Open Graph / Social Media -->
   <meta property="og:type" content="website">
-  <meta property="og:title" content="Muhammad Bilal Farid | Full-Stack & ML Engineer">
-  <meta property="og:description" content="Explore modern full-stack web applications, REST microservices, machine learning pipelines, and automated scraping systems built by Muhammad Bilal Farid.">
+  <meta property="og:title" content="Muhammad Bilal Farid | Full-Stack & ML Engineer Portfolio">
+  <meta property="og:description" content="Explore production-grade full-stack web applications, machine learning pipelines, and REST microservices built by Muhammad Bilal Farid.">
   <meta property="og:url" content="https://bilalfarid-1.github.io/Portfolio-website/">
+
+  <!-- Google Fonts: Montserrat & Google Sans & Fira Code -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&family=Open+Sans:wght@400;600;700&family=Fira+Code:wght@400;500;600&display=swap" rel="stylesheet">
 
   <!-- Font Awesome Icons -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 
-  <!-- Custom Stylesheet -->
+  <!-- Custom Master Portfolio Stylesheet -->
   <link rel="stylesheet" href="./assets/css/main.css">
 </head>
 <body>
 
   <!-- ==========================================================================
-       HEADER & NAVIGATION BAR
+       HEADER & NAVIGATION BAR (MasterPortfolio Style: < Bilal Farid />)
        ========================================================================== -->
-  <header class="navbar">
-    <div class="container nav-container">
-      <a href="#hero" class="nav-logo">
-        <span class="logo-badge">BF</span>
-        <span>BILAL</span>
+  <header class="header">
+    <div class="container header-container">
+      <a href="#greeting" class="logo">
+        <span class="grey-color">&lt;</span>
+        <span class="logo-name">Bilal Farid</span>
+        <span class="grey-color">/&gt;</span>
       </a>
 
-      <nav>
-        <ul class="nav-links">
-          <li><a href="#hero" class="nav-link active">Home</a></li>
-          <li><a href="#about" class="nav-link">About</a></li>
-          <li><a href="#projects" class="nav-link">Projects</a></li>
-          <li><a href="#skills" class="nav-link">Skills</a></li>
-          <li><a href="#timeline" class="nav-link">Experience</a></li>
-          <li><a href="#contact" class="nav-link">Contact</a></li>
+      <nav class="nav-menu">
+        <ul class="nav-list">
+          <li><a href="#skills" class="nav-item">Skills</a></li>
+          <li><a href="#experience" class="nav-item">Experience</a></li>
+          <li><a href="#projects" class="nav-item">Projects</a></li>
+          <li><a href="#certifications" class="nav-item">Certifications</a></li>
+          <li><a href="#education" class="nav-item">Education</a></li>
+          <li><a href="#contact" class="nav-item">Contact Me</a></li>
         </ul>
       </nav>
 
-      <div class="nav-actions">
-        <button class="theme-toggle-btn" aria-label="Toggle dark/light theme" title="Toggle Theme">
+      <div class="header-actions">
+        <!-- Theme Toggle Switcher -->
+        <button class="theme-switch-btn" id="theme-switch-btn" aria-label="Toggle Theme" title="Toggle Light/Dark Theme">
           <i class="fas fa-sun"></i>
         </button>
 
-        <a href="#contact" class="btn-nav-hire">
-          <i class="fas fa-paper-plane"></i>
-          <span>Let's Talk</span>
-        </a>
-
-        <button class="menu-toggle" aria-label="Toggle mobile menu">
+        <!-- Mobile Menu Toggle -->
+        <button class="mobile-toggle-btn" id="mobile-toggle-btn" aria-label="Toggle Menu">
           <span></span>
           <span></span>
           <span></span>
@@ -63,111 +66,372 @@
   </header>
 
   <!-- Mobile Drawer Menu -->
-  <div class="mobile-nav">
-    <ul class="mobile-nav-links">
-      <li><a href="#hero" class="mobile-nav-link active">Home</a></li>
-      <li><a href="#about" class="mobile-nav-link">About Me</a></li>
-      <li><a href="#projects" class="mobile-nav-link">Projects Gallery</a></li>
-      <li><a href="#skills" class="mobile-nav-link">Skills Matrix</a></li>
-      <li><a href="#timeline" class="mobile-nav-link">Experience & Timeline</a></li>
-      <li><a href="#contact" class="mobile-nav-link">Contact Me</a></li>
+  <div class="mobile-drawer" id="mobile-drawer">
+    <ul class="mobile-drawer-list">
+      <li><a href="#skills" class="mobile-nav-item">Skills</a></li>
+      <li><a href="#experience" class="mobile-nav-item">Experience</a></li>
+      <li><a href="#projects" class="mobile-nav-item">Projects</a></li>
+      <li><a href="#certifications" class="mobile-nav-item">Certifications</a></li>
+      <li><a href="#education" class="mobile-nav-item">Education</a></li>
+      <li><a href="#contact" class="mobile-nav-item">Contact Me</a></li>
     </ul>
-
-    <div style="margin-top: 30px; display: flex; flex-direction: column; gap: 16px;">
-      <a href="mailto:bilaldrosh1@gmail.com" class="btn-primary" style="justify-content: center;">
+    <div style="padding: 20px; text-align: center;">
+      <a href="mailto:bilaldrosh1@gmail.com" class="main-button" style="display: block;">
         <i class="fas fa-envelope"></i> bilaldrosh1@gmail.com
       </a>
-      <div style="display: flex; justify-content: center; gap: 16px; font-size: 1.3rem;">
-        <a href="https://github.com/bilalfarid-1" target="_blank" rel="noopener noreferrer" style="color: var(--text-secondary);"><i class="fab fa-github"></i></a>
-        <a href="mailto:bilaldrosh1@gmail.com" style="color: var(--text-secondary);"><i class="fas fa-envelope"></i></a>
-      </div>
     </div>
   </div>
 
   <main>
     <!-- ==========================================================================
-         HERO SECTION
+         1. GREETING / HERO SECTION (MasterPortfolio Greeting + Vector SVG)
          ========================================================================== -->
-    <section id="hero" class="hero-section">
-      <div class="hero-glow-1"></div>
-      <div class="hero-glow-2"></div>
-
+    <section id="greeting" class="greeting-main">
       <div class="container">
-        <div class="hero-grid">
-          <div class="hero-content">
-            <div class="hero-badge-container">
-              <span class="status-dot"></span>
-              <span class="hero-greeting">Available for Software & ML Engineering</span>
-            </div>
-
-            <h1 class="hero-name">
-              Hi, I'm <br>
-              <span class="gradient-text">Muhammad Bilal Farid</span>
+        <div class="greeting-grid">
+          <!-- Left Content -->
+          <div class="greeting-text-div">
+            <h1 class="greeting-title">
+              Hi all, I'm Bilal <span class="wave-emoji">👋</span>
             </h1>
-
-            <div class="hero-title-wrapper">
-              <span>I am a </span>
-              <span id="typed-text" class="typed-text"></span>
-              <span class="typed-cursor"></span>
-            </div>
-
-            <p class="hero-bio">
-              Software Engineer specializing in scalable backend microservices, modern responsive web applications, and production Machine Learning pipelines. Passionate about building robust architectures with FastAPI, React, PostgreSQL, and Scikit-Learn.
+            <p class="greeting-subtitle">
+              A passionate <strong>Full-Stack Developer & Machine Learning Engineer</strong> having experience in building Web Applications with Python / FastAPI / React, predictive ML forecasting pipelines, and high-throughput web automation scrapers.
             </p>
 
-            <div class="hero-cta-group">
-              <a href="#projects" class="btn-primary">
-                <i class="fas fa-code-branch"></i>
-                <span>Explore Projects</span>
-              </a>
-              <a href="#contact" class="btn-secondary">
-                <i class="fas fa-envelope"></i>
-                <span>Get In Touch</span>
-              </a>
-            </div>
-
-            <div class="hero-socials">
-              <a href="https://github.com/bilalfarid-1" target="_blank" rel="noopener noreferrer" class="social-pill" title="GitHub (@bilalfarid-1)">
+            <!-- Social Media Icon Badges with Official Brand Colors -->
+            <div class="social-media-div">
+              <a href="https://github.com/bilalfarid-1" target="_blank" rel="noopener noreferrer" class="social-icon icon-github" title="GitHub">
                 <i class="fab fa-github"></i>
               </a>
-              <a href="mailto:bilaldrosh1@gmail.com" class="social-pill" title="Email: bilaldrosh1@gmail.com">
-                <i class="fas fa-envelope"></i>
-              </a>
-              <a href="https://www.linkedin.com" target="_blank" rel="noopener noreferrer" class="social-pill" title="LinkedIn">
+              <a href="https://www.linkedin.com/" target="_blank" rel="noopener noreferrer" class="social-icon icon-linkedin" title="LinkedIn">
                 <i class="fab fa-linkedin-in"></i>
               </a>
-              <a href="https://www.instagram.com/bilal.farid_/" target="_blank" rel="noopener noreferrer" class="social-pill" title="Instagram">
-                <i class="fab fa-instagram"></i>
+              <a href="mailto:bilaldrosh1@gmail.com" class="social-icon icon-gmail" title="Email">
+                <i class="fas fa-envelope"></i>
+              </a>
+              <a href="tel:+923464619093" class="social-icon icon-phone" title="Phone">
+                <i class="fas fa-phone"></i>
+              </a>
+              <a href="https://wa.me/923464619093" target="_blank" rel="noopener noreferrer" class="social-icon icon-whatsapp" title="WhatsApp">
+                <i class="fab fa-whatsapp"></i>
+              </a>
+            </div>
+
+            <!-- Action Buttons -->
+            <div class="button-greeting-div">
+              <a href="#contact" class="main-button">Contact Me</a>
+              <a href="https://github.com/bilalfarid-1" target="_blank" rel="noopener noreferrer" class="project-button">
+                <i class="fab fa-github"></i> Star Me On GitHub
               </a>
             </div>
           </div>
 
-          <div class="hero-visual-wrapper">
-            <div class="hero-avatar-card">
-              <div class="avatar-image-container">
-                <img src="./FB_IMG_1698480977882-removebg (1).png" alt="Muhammad Bilal Farid" onerror="this.onerror=null; this.src='./IMG_1912uuu.JPG';">
-              </div>
+          <!-- Right Vector SVG Illustration (MasterPortfolio Coding SVG) -->
+          <div class="greeting-image-div">
+            <svg viewBox="0 0 650 500" class="hero-svg-illustration" xmlns="http://www.w3.org/2000/svg">
+              <defs>
+                <linearGradient id="grad-monitor" x1="0%" y1="0%" x2="100%" y2="100%">
+                  <stop offset="0%" stop-color="#1F2937"/>
+                  <stop offset="100%" stop-color="#111827"/>
+                </linearGradient>
+                <linearGradient id="grad-screen" x1="0%" y1="0%" x2="100%" y2="100%">
+                  <stop offset="0%" stop-color="#0F172A"/>
+                  <stop offset="100%" stop-color="#1E293B"/>
+                </linearGradient>
+                <linearGradient id="grad-primary" x1="0%" y1="0%" x2="100%" y2="100%">
+                  <stop offset="0%" stop-color="#0077B5"/>
+                  <stop offset="100%" stop-color="#00A0DC"/>
+                </linearGradient>
+                <linearGradient id="grad-glow" x1="0%" y1="0%" x2="100%" y2="100%">
+                  <stop offset="0%" stop-color="#00D2FF"/>
+                  <stop offset="100%" stop-color="#00F5D4"/>
+                </linearGradient>
+              </defs>
 
-              <!-- Floating UI Badges -->
-              <div class="floating-widget widget-left">
-                <div class="widget-icon icon-cyan">
-                  <i class="fas fa-server"></i>
-                </div>
-                <div class="widget-info">
-                  <h4>FastAPI & Python</h4>
-                  <p>Microservices & REST APIs</p>
-                </div>
-              </div>
+              <!-- Desk and Ambient Shadows -->
+              <ellipse cx="325" cy="460" rx="280" ry="25" fill="#000000" opacity="0.25"/>
+              <path d="M 60 420 L 590 420 L 560 440 L 90 440 Z" fill="#374151"/>
+              <rect x="75" y="440" width="500" height="12" rx="4" fill="#1F2937"/>
 
-              <div class="floating-widget widget-right">
-                <div class="widget-icon icon-emerald">
-                  <i class="fas fa-brain"></i>
-                </div>
-                <div class="widget-info">
-                  <h4>ML & Automation</h4>
-                  <p>XGBoost & Playwright</p>
-                </div>
-              </div>
+              <!-- Main Desktop Monitor -->
+              <rect x="160" y="80" width="330" height="230" rx="14" fill="url(#grad-monitor)" stroke="#374151" stroke-width="4"/>
+              <rect x="175" y="95" width="300" height="195" rx="8" fill="url(#grad-screen)"/>
+              
+              <!-- Monitor Stand -->
+              <path d="M 305 310 L 345 310 L 355 390 L 295 390 Z" fill="#4B5563"/>
+              <rect x="265" y="390" width="120" height="14" rx="4" fill="#374151"/>
+
+              <!-- Code Lines on Main Monitor -->
+              <circle cx="195" cy="115" r="5" fill="#EF4444"/>
+              <circle cx="210" cy="115" r="5" fill="#F59E0B"/>
+              <circle cx="225" cy="115" r="5" fill="#10B981"/>
+
+              <rect x="195" y="140" width="80" height="10" rx="3" fill="#00D2FF" opacity="0.9"/>
+              <rect x="285" y="140" width="60" height="10" rx="3" fill="#A855F7" opacity="0.8"/>
+              <rect x="215" y="160" width="140" height="8" rx="3" fill="#64748B"/>
+              <rect x="215" y="176" width="180" height="8" rx="3" fill="#10B981" opacity="0.85"/>
+              <rect x="235" y="192" width="110" height="8" rx="3" fill="#F59E0B" opacity="0.85"/>
+              <rect x="235" y="208" width="160" height="8" rx="3" fill="#38BDF8"/>
+              <rect x="215" y="224" width="90" height="8" rx="3" fill="#A855F7"/>
+              <rect x="195" y="244" width="70" height="10" rx="3" fill="#00D2FF"/>
+
+              <!-- Laptop on the Left -->
+              <rect x="90" y="260" width="130" height="100" rx="8" fill="#1F2937" stroke="#4B5563" stroke-width="2"/>
+              <rect x="98" y="270" width="114" height="80" rx="4" fill="#0F172A"/>
+              <rect x="110" y="285" width="50" height="6" rx="2" fill="#00D2FF"/>
+              <rect x="110" y="297" width="75" height="6" rx="2" fill="#10B981"/>
+              <rect x="110" y="309" width="60" height="6" rx="2" fill="#F59E0B"/>
+              <path d="M 75 360 L 235 360 L 225 375 L 85 375 Z" fill="#374151"/>
+
+              <!-- Coffee Mug & Notes on the Right -->
+              <rect x="500" y="340" width="40" height="50" rx="6" fill="#F97316"/>
+              <path d="M 540 350 C 555 350 555 375 540 375" fill="none" stroke="#F97316" stroke-width="4"/>
+              <path d="M 515 325 C 510 315 525 305 520 295" fill="none" stroke="#E2E8F0" stroke-width="2" stroke-linecap="round" opacity="0.6"/>
+
+              <!-- Decorative Floating Badges -->
+              <g transform="translate(470, 110)">
+                <rect width="130" height="50" rx="10" fill="#1E293B" stroke="#00D2FF" stroke-width="1.5" opacity="0.95"/>
+                <text x="65" y="24" fill="#FFFFFF" font-family="'Montserrat', sans-serif" font-size="11" font-weight="700" text-anchor="middle">FastAPI + Python</text>
+                <text x="65" y="39" fill="#00D2FF" font-family="'Montserrat', sans-serif" font-size="10" font-weight="600" text-anchor="middle">⚡ High Speed</text>
+              </g>
+
+              <g transform="translate(50, 120)">
+                <rect width="120" height="50" rx="10" fill="#1E293B" stroke="#A855F7" stroke-width="1.5" opacity="0.95"/>
+                <text x="60" y="24" fill="#FFFFFF" font-family="'Montserrat', sans-serif" font-size="11" font-weight="700" text-anchor="middle">Machine Learning</text>
+                <text x="60" y="39" fill="#A855F7" font-family="'Montserrat', sans-serif" font-size="10" font-weight="600" text-anchor="middle">🤖 Ensembles & AI</text>
+              </g>
+            </svg>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         2. "WHAT I DO ?" SKILLS SECTION (MasterPortfolio 3 Domain Illustrated Blocks)
+         ========================================================================== -->
+    <section id="skills" class="skills-main-section">
+      <div class="container">
+        <div class="skills-heading-div">
+          <h1 class="skills-header">What I Do ?</h1>
+          <p class="skills-header-subtitle">
+            CRAZY FULL STACK & MACHINE LEARNING DEVELOPER WHO WANTS TO EXPLORE EVERY TECH STACK
+          </p>
+        </div>
+
+        <!-- Block 1: Data Science & AI -->
+        <div class="skills-row">
+          <div class="skills-image-col">
+            <svg viewBox="0 0 500 400" class="skill-vector-svg" xmlns="http://www.w3.org/2000/svg">
+              <!-- AI & Data Analytics SVG Illustration -->
+              <rect x="40" y="40" width="420" height="320" rx="20" fill="#1E293B" stroke="#334155" stroke-width="3"/>
+              <!-- Chart Visualizations -->
+              <path d="M 80 280 L 140 220 L 200 240 L 260 170 L 320 200 L 380 120 L 420 150" fill="none" stroke="#00D2FF" stroke-width="5" stroke-linecap="round"/>
+              <path d="M 80 280 L 140 220 L 200 240 L 260 170 L 320 200 L 380 120 L 420 150 L 420 310 L 80 310 Z" fill="url(#grad-glow)" opacity="0.12"/>
+              <!-- Bar Chart Columns -->
+              <rect x="100" y="190" width="22" height="120" rx="4" fill="#3B82F6" opacity="0.7"/>
+              <rect x="160" y="140" width="22" height="170" rx="4" fill="#10B981" opacity="0.7"/>
+              <rect x="220" y="110" width="22" height="200" rx="4" fill="#A855F7" opacity="0.7"/>
+              <rect x="280" y="160" width="22" height="150" rx="4" fill="#F59E0B" opacity="0.7"/>
+              <rect x="340" y="80" width="22" height="230" rx="4" fill="#00D2FF" opacity="0.85"/>
+              <!-- AI Neural Nodes -->
+              <circle cx="150" cy="80" r="14" fill="#F59E0B"/>
+              <circle cx="250" cy="65" r="16" fill="#A855F7"/>
+              <circle cx="350" cy="80" r="14" fill="#00D2FF"/>
+              <line x1="150" y1="80" x2="250" y2="65" stroke="#E2E8F0" stroke-width="2" opacity="0.4"/>
+              <line x1="250" y1="65" x2="350" y2="80" stroke="#E2E8F0" stroke-width="2" opacity="0.4"/>
+            </svg>
+          </div>
+
+          <div class="skills-text-col">
+            <h2 class="skill-category-title">Data Science & AI</h2>
+
+            <!-- Technology Icons Badges -->
+            <div class="software-skills-main-div">
+              <ul class="dev-icons">
+                <li class="software-skill-inline" name="Python" title="Python 3.12">
+                  <i class="fab fa-python" style="color: #3776AB;"></i>
+                  <span>Python</span>
+                </li>
+                <li class="software-skill-inline" name="Scikit-Learn" title="Scikit-Learn">
+                  <i class="fas fa-brain" style="color: #F7931E;"></i>
+                  <span>Scikit-Learn</span>
+                </li>
+                <li class="software-skill-inline" name="XGBoost" title="XGBoost & LightGBM">
+                  <i class="fas fa-chart-line" style="color: #10B981;"></i>
+                  <span>XGBoost</span>
+                </li>
+                <li class="software-skill-inline" name="Pandas" title="Pandas & NumPy">
+                  <i class="fas fa-table" style="color: #150458;"></i>
+                  <span>Pandas</span>
+                </li>
+                <li class="software-skill-inline" name="Optuna" title="Optuna Hyperparameter Tuning">
+                  <i class="fas fa-sliders" style="color: #3B82F6;"></i>
+                  <span>Optuna</span>
+                </li>
+                <li class="software-skill-inline" name="Streamlit" title="Streamlit ML Dashboard">
+                  <i class="fas fa-chart-pie" style="color: #FF4B4B;"></i>
+                  <span>Streamlit</span>
+                </li>
+              </ul>
+            </div>
+
+            <!-- Bullet Points (MasterPortfolio ⚡ Bullets) -->
+            <div class="skills-bullets-div">
+              <p class="subTitle skills-text">
+                ⚡ Developing end-to-end predictive machine learning pipelines with automated feature engineering & skewness correction.
+              </p>
+              <p class="subTitle skills-text">
+                ⚡ Hyperparameter optimization (Optuna) and multi-algorithm stacking ensembles (RidgeCV, XGBoost, LightGBM) with sub-0.11 RMSLE.
+              </p>
+              <p class="subTitle skills-text">
+                ⚡ Geospatial satellite imagery analytics and remote sensing models for environmental forecasting.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Block 2: Full-Stack Web Development -->
+        <div class="skills-row reverse-row">
+          <div class="skills-image-col">
+            <svg viewBox="0 0 500 400" class="skill-vector-svg" xmlns="http://www.w3.org/2000/svg">
+              <!-- Full Stack Web Browser & Responsive UI SVG -->
+              <rect x="40" y="50" width="340" height="240" rx="14" fill="#1E293B" stroke="#334155" stroke-width="3"/>
+              <rect x="40" y="50" width="340" height="35" rx="14" fill="#0F172A"/>
+              <circle cx="65" cy="67" r="5" fill="#EF4444"/>
+              <circle cx="80" cy="67" r="5" fill="#F59E0B"/>
+              <circle cx="95" cy="67" r="5" fill="#10B981"/>
+              <!-- Web App Layout Inside Browser -->
+              <rect x="65" y="105" width="290" height="50" rx="6" fill="#3B82F6" opacity="0.3"/>
+              <rect x="65" y="170" width="90" height="100" rx="6" fill="#00D2FF" opacity="0.4"/>
+              <rect x="165" y="170" width="90" height="100" rx="6" fill="#10B981" opacity="0.4"/>
+              <rect x="265" y="170" width="90" height="100" rx="6" fill="#A855F7" opacity="0.4"/>
+              <!-- Mobile Phone Visual in Foreground -->
+              <rect x="330" y="140" width="120" height="210" rx="18" fill="#111827" stroke="#00D2FF" stroke-width="3"/>
+              <rect x="340" y="160" width="100" height="160" rx="8" fill="#1E293B"/>
+              <rect x="350" y="180" width="80" height="30" rx="4" fill="#F59E0B" opacity="0.6"/>
+              <rect x="350" y="220" width="80" height="40" rx="4" fill="#10B981" opacity="0.6"/>
+            </svg>
+          </div>
+
+          <div class="skills-text-col">
+            <h2 class="skill-category-title">Full Stack Web Development</h2>
+
+            <div class="software-skills-main-div">
+              <ul class="dev-icons">
+                <li class="software-skill-inline" name="React" title="React.js">
+                  <i class="fab fa-react" style="color: #61DAFB;"></i>
+                  <span>React</span>
+                </li>
+                <li class="software-skill-inline" name="JavaScript" title="JavaScript ES6+">
+                  <i class="fab fa-js-square" style="color: #F7DF1E;"></i>
+                  <span>JavaScript</span>
+                </li>
+                <li class="software-skill-inline" name="HTML5" title="HTML5">
+                  <i class="fab fa-html5" style="color: #E34F26;"></i>
+                  <span>HTML5</span>
+                </li>
+                <li class="software-skill-inline" name="CSS3" title="CSS3 & Tailwind">
+                  <i class="fab fa-css3-alt" style="color: #1572B6;"></i>
+                  <span>CSS3</span>
+                </li>
+                <li class="software-skill-inline" name="NodeJS" title="Node.js">
+                  <i class="fab fa-node" style="color: #339933;"></i>
+                  <span>Node.js</span>
+                </li>
+                <li class="software-skill-inline" name="Flutter" title="Flutter & Dart">
+                  <i class="fas fa-mobile-screen" style="color: #02569B;"></i>
+                  <span>Flutter</span>
+                </li>
+                <li class="software-skill-inline" name="Java" title="Java OOP">
+                  <i class="fab fa-java" style="color: #E76F00;"></i>
+                  <span>Java</span>
+                </li>
+              </ul>
+            </div>
+
+            <div class="skills-bullets-div">
+              <p class="subTitle skills-text">
+                ⚡ Building responsive Single Page Applications (SPAs) with modern component architectures and state management.
+              </p>
+              <p class="subTitle skills-text">
+                ⚡ Interactive e-commerce workflows featuring real-time carts, dynamic pricing, and 5-stage live order tracking.
+              </p>
+              <p class="subTitle skills-text">
+                ⚡ Clean UI/UX design with theme persistence, responsive mobile navigation, and accessible forms.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Block 3: Backend Systems & Cloud / Scraping -->
+        <div class="skills-row">
+          <div class="skills-image-col">
+            <svg viewBox="0 0 500 400" class="skill-vector-svg" xmlns="http://www.w3.org/2000/svg">
+              <!-- Cloud Servers & Microservices SVG -->
+              <rect x="120" y="60" width="260" height="75" rx="10" fill="#1E293B" stroke="#00D2FF" stroke-width="2"/>
+              <circle cx="150" cy="97" r="8" fill="#10B981"/>
+              <rect x="175" y="93" width="170" height="8" rx="3" fill="#64748B"/>
+
+              <rect x="120" y="160" width="260" height="75" rx="10" fill="#1E293B" stroke="#3B82F6" stroke-width="2"/>
+              <circle cx="150" cy="197" r="8" fill="#3B82F6"/>
+              <rect x="175" y="193" width="170" height="8" rx="3" fill="#64748B"/>
+
+              <rect x="120" y="260" width="260" height="75" rx="10" fill="#1E293B" stroke="#A855F7" stroke-width="2"/>
+              <circle cx="150" cy="297" r="8" fill="#A855F7"/>
+              <rect x="175" y="293" width="170" height="8" rx="3" fill="#64748B"/>
+
+              <!-- Connecting Data Lines -->
+              <line x1="250" y1="135" x2="250" y2="160" stroke="#00D2FF" stroke-width="3" stroke-dasharray="4,4"/>
+              <line x1="250" y1="235" x2="250" y2="260" stroke="#00D2FF" stroke-width="3" stroke-dasharray="4,4"/>
+            </svg>
+          </div>
+
+          <div class="skills-text-col">
+            <h2 class="skill-category-title">Cloud Infrastructure & APIs</h2>
+
+            <div class="software-skills-main-div">
+              <ul class="dev-icons">
+                <li class="software-skill-inline" name="FastAPI" title="FastAPI Microservices">
+                  <i class="fas fa-bolt" style="color: #009688;"></i>
+                  <span>FastAPI</span>
+                </li>
+                <li class="software-skill-inline" name="PostgreSQL" title="PostgreSQL Database">
+                  <i class="fas fa-database" style="color: #336791;"></i>
+                  <span>PostgreSQL</span>
+                </li>
+                <li class="software-skill-inline" name="SQLite" title="SQLite Database">
+                  <i class="fas fa-database" style="color: #003B57;"></i>
+                  <span>SQLite</span>
+                </li>
+                <li class="software-skill-inline" name="Redis" title="Redis In-Memory Cache">
+                  <i class="fas fa-server" style="color: #DC382D;"></i>
+                  <span>Redis</span>
+                </li>
+                <li class="software-skill-inline" name="Playwright" title="Playwright Web Automation">
+                  <i class="fas fa-spider" style="color: #2EAD33;"></i>
+                  <span>Playwright</span>
+                </li>
+                <li class="software-skill-inline" name="Docker" title="Docker Containerization">
+                  <i class="fab fa-docker" style="color: #2496ED;"></i>
+                  <span>Docker</span>
+                </li>
+                <li class="software-skill-inline" name="Git" title="Git Version Control">
+                  <i class="fab fa-git-alt" style="color: #F05032;"></i>
+                  <span>Git</span>
+                </li>
+              </ul>
+            </div>
+
+            <div class="skills-bullets-div">
+              <p class="subTitle skills-text">
+                ⚡ Designing high-performance asynchronous RESTful APIs with SQLAlchemy 2.0, Alembic migrations, and JWT authentication.
+              </p>
+              <p class="subTitle skills-text">
+                ⚡ Engineering high-throughput web automation scrapers with headless Chromium and token-bucket rate limiters.
+              </p>
+              <p class="subTitle skills-text">
+                ⚡ Robust microservice architectures with sliding-window rate limiting, Base62 hashing, and click telemetry.
+              </p>
             </div>
           </div>
         </div>
@@ -175,315 +439,70 @@
     </section>
 
     <!-- ==========================================================================
-         STATS COUNTER BAR
+         3. EXPERIENCE SECTION (MasterPortfolio Experience Cards)
          ========================================================================== -->
-    <section class="stats-bar-section">
+    <section id="experience" class="experience-main-section">
       <div class="container">
-        <div class="stats-grid">
-          <div class="stat-card">
-            <div class="stat-number" data-target="8" data-suffix="+">0</div>
-            <div class="stat-label">Core Repositories</div>
-          </div>
-          <div class="stat-card">
-            <div class="stat-number" data-target="98" data-suffix="%">0</div>
-            <div class="stat-label">Test & Code Quality</div>
-          </div>
-          <div class="stat-card">
-            <div class="stat-number" data-target="15" data-suffix="+">0</div>
-            <div class="stat-label">Production Deployments</div>
-          </div>
-          <div class="stat-card">
-            <div class="stat-number" data-target="100" data-suffix="%">0</div>
-            <div class="stat-label">Responsive UI & APIs</div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- ==========================================================================
-         ABOUT ME SECTION
-         ========================================================================== -->
-    <section id="about" class="section">
-      <div class="container">
-        <div class="section-header">
-          <span class="section-tag"><i class="fas fa-user"></i> About Me</span>
-          <h2 class="section-title">Architecting <span class="gradient-text">Scalable Software</span> & AI Solutions</h2>
-          <p class="section-subtitle">A blend of backend precision, modern frontend craft, and data-driven intelligence.</p>
+        <div class="skills-heading-div">
+          <h1 class="skills-header">Work Experiences</h1>
+          <p class="skills-header-subtitle">
+            PRACTICAL ENGINEERING ACHIEVEMENTS & SPECIALIZED TRAINING INITIATIVES
+          </p>
         </div>
 
-        <div class="about-grid">
-          <div class="about-image-card">
-            <img src="./IMG_1912uuu.JPG" alt="Muhammad Bilal Farid - Software Engineer">
-            <div class="about-overlay-badge">
-              <div style="display: flex; align-items: center; gap: 12px;">
-                <i class="fas fa-laptop-code" style="color: var(--primary); font-size: 1.4rem;"></i>
-                <div>
-                  <h4 style="color: #ffffff; font-size: 1rem; margin: 0;">Full-Stack & Machine Learning</h4>
-                  <p style="color: #94a3b8; font-size: 0.85rem; margin: 0;">2+ Years Professional Experience</p>
-                </div>
+        <div class="experience-cards-div">
+          <!-- Experience Card 1 -->
+          <div class="experience-card">
+            <div class="experience-card-header">
+              <div class="exp-icon-wrap bg-primary-gradient">
+                <i class="fas fa-laptop-code"></i>
+              </div>
+              <div class="exp-header-text">
+                <h3 class="experience-card-title">Full-Stack & Machine Learning Developer</h3>
+                <h4 class="experience-card-company">Production Systems & Open Source</h4>
+              </div>
+              <div class="experience-card-duration">
+                <span>2026 - Present</span>
+              </div>
+            </div>
+            <div class="experience-card-body">
+              <p class="experience-card-description">
+                Built and open-sourced production-ready FastAPI microservices, machine learning regression pipelines (Ames dataset, RMSLE 0.1080), and Playwright headless web scrapers. Implemented automated Pytest suites with 100% pass rates across 159 tests.
+              </p>
+              <div class="experience-tags">
+                <span class="exp-tag">FastAPI</span>
+                <span class="exp-tag">Python 3.12</span>
+                <span class="exp-tag">Scikit-Learn</span>
+                <span class="exp-tag">PostgreSQL</span>
+                <span class="exp-tag">Playwright</span>
               </div>
             </div>
           </div>
 
-          <div class="about-content">
-            <h3>Turning complex problems into clean, high-performance applications.</h3>
-            <p>
-              I am Muhammad Bilal Farid, a software engineer with deep expertise spanning full-stack development, distributed backend architectures, and machine learning systems.
-            </p>
-            <p>
-              Whether it is engineering sub-millisecond URL redirection microservices with Redis, building high-throughput web automation crawlers with Playwright, or designing regression and geospatial classification models with XGBoost, I focus on clean code, automated testing, and exceptional developer experience.
-            </p>
-
-            <div class="about-highlights-grid">
-              <div class="highlight-item">
-                <i class="fas fa-cubes"></i>
-                <div>
-                  <h5>Backend Microservices</h5>
-                  <p>FastAPI, SQLAlchemy, Redis caching & PostgreSQL</p>
-                </div>
-              </div>
-
-              <div class="highlight-item">
-                <i class="fas fa-layer-group"></i>
-                <div>
-                  <h5>Frontend & Mobile</h5>
-                  <p>React, Modern JavaScript, Flutter & Tailwind CSS</p>
-                </div>
-              </div>
-
-              <div class="highlight-item">
-                <i class="fas fa-robot"></i>
-                <div>
-                  <h5>Machine Learning</h5>
-                  <p>Scikit-Learn, XGBoost, SHAP & Computer Vision</p>
-                </div>
-              </div>
-
-              <div class="highlight-item">
-                <i class="fas fa-spider"></i>
-                <div>
-                  <h5>Web Automation</h5>
-                  <p>Playwright, AsyncIO & Resilient Scraping</p>
-                </div>
-              </div>
-            </div>
-
-            <div style="display: flex; gap: 14px; flex-wrap: wrap;">
-              <a href="#contact" class="btn-primary">
-                <i class="fas fa-paper-plane"></i> Contact Me
-              </a>
-              <a href="https://github.com/bilalfarid-1" target="_blank" rel="noopener noreferrer" class="btn-secondary">
-                <i class="fab fa-github"></i> Visit GitHub Profile
-              </a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- ==========================================================================
-         PROJECTS GALLERY SECTION (Interactive Filterable)
-         ========================================================================== -->
-    <section id="projects" class="section" style="background: rgba(var(--primary-rgb), 0.02);">
-      <div class="container">
-        <div class="section-header">
-          <span class="section-tag"><i class="fas fa-folder-open"></i> Portfolio Showcase</span>
-          <h2 class="section-title">Featured <span class="gradient-text">Engineering Projects</span></h2>
-          <p class="section-subtitle">Explore key repositories, backend APIs, machine learning pipelines, and web applications.</p>
-        </div>
-
-        <!-- Filter Bar -->
-        <div class="projects-filter-bar">
-          <button class="filter-btn active" data-filter="all">
-            <i class="fas fa-th"></i> All Projects
-          </button>
-          <button class="filter-btn" data-filter="fullstack">
-            <i class="fas fa-laptop-code"></i> Full-Stack
-          </button>
-          <button class="filter-btn" data-filter="backend">
-            <i class="fas fa-server"></i> Backend & APIs
-          </button>
-          <button class="filter-btn" data-filter="ml">
-            <i class="fas fa-brain"></i> Machine Learning
-          </button>
-          <button class="filter-btn" data-filter="automation">
-            <i class="fas fa-cogs"></i> Automation
-          </button>
-        </div>
-
-        <!-- Projects Grid Container (Dynamic Injection via projects-data.js) -->
-        <div id="projects-grid" class="projects-grid"></div>
-      </div>
-    </section>
-
-    <!-- ==========================================================================
-         SKILLS MATRIX SECTION
-         ========================================================================== -->
-    <section id="skills" class="section">
-      <div class="container">
-        <div class="section-header">
-          <span class="section-tag"><i class="fas fa-bolt"></i> Technical Arsenal</span>
-          <h2 class="section-title">Skills & <span class="gradient-text">Proficiency Matrix</span></h2>
-          <p class="section-subtitle">Languages, frameworks, databases, and toolsets utilized across production codebases.</p>
-        </div>
-
-        <div class="skills-categories-grid">
-          <!-- Category 1: Languages & Core -->
-          <div class="skills-category-card">
-            <div class="category-card-header">
-              <div class="category-icon" style="background: linear-gradient(135deg, #06b6d4, #3b82f6);">
-                <i class="fas fa-code"></i>
-              </div>
-              <h3 class="category-title">Programming Languages</h3>
-            </div>
-            <div class="skills-list">
-              <div class="skill-item">
-                <div class="skill-meta">
-                  <span>Python (FastAPI, ML, Automation)</span>
-                  <span class="skill-percent">95%</span>
-                </div>
-                <div class="progress-track"><div class="progress-bar-fill" data-width="95%"></div></div>
-              </div>
-              <div class="skill-item">
-                <div class="skill-meta">
-                  <span>JavaScript & TypeScript (ES6+)</span>
-                  <span class="skill-percent">90%</span>
-                </div>
-                <div class="progress-track"><div class="progress-bar-fill" data-width="90%"></div></div>
-              </div>
-              <div class="skill-item">
-                <div class="skill-meta">
-                  <span>Dart / Flutter</span>
-                  <span class="skill-percent">85%</span>
-                </div>
-                <div class="progress-track"><div class="progress-bar-fill" data-width="85%"></div></div>
-              </div>
-              <div class="skill-item">
-                <div class="skill-meta">
-                  <span>Java / OOP Architecture</span>
-                  <span class="skill-percent">82%</span>
-                </div>
-                <div class="progress-track"><div class="progress-bar-fill" data-width="82%"></div></div>
-              </div>
-            </div>
-          </div>
-
-          <!-- Category 2: Backend & APIs -->
-          <div class="skills-category-card">
-            <div class="category-card-header">
-              <div class="category-icon" style="background: linear-gradient(135deg, #8b5cf6, #4f46e5);">
-                <i class="fas fa-network-wired"></i>
-              </div>
-              <h3 class="category-title">Backend & APIs</h3>
-            </div>
-            <div class="skills-list">
-              <div class="skill-item">
-                <div class="skill-meta">
-                  <span>FastAPI & Pydantic</span>
-                  <span class="skill-percent">94%</span>
-                </div>
-                <div class="progress-track"><div class="progress-bar-fill" data-width="94%"></div></div>
-              </div>
-              <div class="skill-item">
-                <div class="skill-meta">
-                  <span>REST API Design & OpenAPI / Swagger</span>
-                  <span class="skill-percent">95%</span>
-                </div>
-                <div class="progress-track"><div class="progress-bar-fill" data-width="95%"></div></div>
-              </div>
-              <div class="skill-item">
-                <div class="skill-meta">
-                  <span>SQLAlchemy & ORM Modeling</span>
-                  <span class="skill-percent">90%</span>
-                </div>
-                <div class="progress-track"><div class="progress-bar-fill" data-width="90%"></div></div>
-              </div>
-              <div class="skill-item">
-                <div class="skill-meta">
-                  <span>JWT Auth & Security Middlewares</span>
-                  <span class="skill-percent">92%</span>
-                </div>
-                <div class="progress-track"><div class="progress-bar-fill" data-width="92%"></div></div>
-              </div>
-            </div>
-          </div>
-
-          <!-- Category 3: Machine Learning & Data -->
-          <div class="skills-category-card">
-            <div class="category-card-header">
-              <div class="category-icon" style="background: linear-gradient(135deg, #10b981, #0d9488);">
+          <!-- Experience Card 2 -->
+          <div class="experience-card">
+            <div class="experience-card-header">
+              <div class="exp-icon-wrap bg-amber-gradient">
                 <i class="fas fa-brain"></i>
               </div>
-              <h3 class="category-title">Machine Learning & Automation</h3>
-            </div>
-            <div class="skills-list">
-              <div class="skill-item">
-                <div class="skill-meta">
-                  <span>Scikit-Learn & ML Pipelines</span>
-                  <span class="skill-percent">92%</span>
-                </div>
-                <div class="progress-track"><div class="progress-bar-fill" data-width="92%"></div></div>
+              <div class="exp-header-text">
+                <h3 class="experience-card-title">AI & Machine Learning Fellow</h3>
+                <h4 class="experience-card-company">NAVTTC National Training Program</h4>
               </div>
-              <div class="skill-item">
-                <div class="skill-meta">
-                  <span>XGBoost & LightGBM Ensembles</span>
-                  <span class="skill-percent">90%</span>
-                </div>
-                <div class="progress-track"><div class="progress-bar-fill" data-width="90%"></div></div>
-              </div>
-              <div class="skill-item">
-                <div class="skill-meta">
-                  <span>Playwright & Async Web Scraping</span>
-                  <span class="skill-percent">94%</span>
-                </div>
-                <div class="progress-track"><div class="progress-bar-fill" data-width="94%"></div></div>
-              </div>
-              <div class="skill-item">
-                <div class="skill-meta">
-                  <span>Pandas, NumPy & SHAP Explainability</span>
-                  <span class="skill-percent">95%</span>
-                </div>
-                <div class="progress-track"><div class="progress-bar-fill" data-width="95%"></div></div>
+              <div class="experience-card-duration">
+                <span>2025 - 2026</span>
               </div>
             </div>
-          </div>
-
-          <!-- Category 4: Frontend, Databases & DevOps -->
-          <div class="skills-category-card">
-            <div class="category-card-header">
-              <div class="category-icon" style="background: linear-gradient(135deg, #f59e0b, #ea580c);">
-                <i class="fas fa-database"></i>
-              </div>
-              <h3 class="category-title">Frontend, Databases & DevOps</h3>
-            </div>
-            <div class="skills-list">
-              <div class="skill-item">
-                <div class="skill-meta">
-                  <span>React & Modern Responsive UI / Tailwind</span>
-                  <span class="skill-percent">90%</span>
-                </div>
-                <div class="progress-track"><div class="progress-bar-fill" data-width="90%"></div></div>
-              </div>
-              <div class="skill-item">
-                <div class="skill-meta">
-                  <span>PostgreSQL, SQLite & Redis Caching</span>
-                  <span class="skill-percent">90%</span>
-                </div>
-                <div class="progress-track"><div class="progress-bar-fill" data-width="90%"></div></div>
-              </div>
-              <div class="skill-item">
-                <div class="skill-meta">
-                  <span>Docker Containerization</span>
-                  <span class="skill-percent">84%</span>
-                </div>
-                <div class="progress-track"><div class="progress-bar-fill" data-width="84%"></div></div>
-              </div>
-              <div class="skill-item">
-                <div class="skill-meta">
-                  <span>Git, GitHub Actions & CI/CD</span>
-                  <span class="skill-percent">92%</span>
-                </div>
-                <div class="progress-track"><div class="progress-bar-fill" data-width="92%"></div></div>
+            <div class="experience-card-body">
+              <p class="experience-card-description">
+                Completed rigorous practical training in machine learning, statistical modeling, exploratory data analysis, and hyperparameter tuning with Optuna. Built predictive models for environmental air quality and forest deforestation detection.
+              </p>
+              <div class="experience-tags">
+                <span class="exp-tag">Machine Learning</span>
+                <span class="exp-tag">Optuna</span>
+                <span class="exp-tag">Pandas</span>
+                <span class="exp-tag">EDA</span>
+                <span class="exp-tag">Seaborn</span>
               </div>
             </div>
           </div>
@@ -492,116 +511,117 @@
     </section>
 
     <!-- ==========================================================================
-         TIMELINE SECTION (Experience, Education, Certifications)
+         4. OPEN SOURCE PROJECTS (MasterPortfolio GitHub Repo Cards Style)
          ========================================================================== -->
-    <section id="timeline" class="section" style="background: rgba(var(--primary-rgb), 0.02);">
+    <section id="projects" class="projects-main-section">
       <div class="container">
-        <div class="section-header">
-          <span class="section-tag"><i class="fas fa-graduation-cap"></i> Journey & Background</span>
-          <h2 class="section-title">Experience & <span class="gradient-text">Milestones</span></h2>
-          <p class="section-subtitle">My professional career, academic foundations, and engineering certifications.</p>
+        <div class="skills-heading-div">
+          <h1 class="skills-header">Open Source Projects</h1>
+          <p class="skills-header-subtitle">
+            FEATURED PRODUCTION REPOSITORIES WITH VERIFIED AUTOMATED TEST SUITES
+          </p>
         </div>
 
-        <div class="timeline-tabs">
-          <button class="timeline-tab-btn active" data-target="experience-group">
-            <i class="fas fa-briefcase"></i> Experience
-          </button>
-          <button class="timeline-tab-btn" data-target="education-group">
-            <i class="fas fa-university"></i> Education
-          </button>
-          <button class="timeline-tab-btn" data-target="certifications-group">
-            <i class="fas fa-certificate"></i> Certifications
-          </button>
+        <!-- Filter Navigation -->
+        <div class="project-filter-nav">
+          <button class="project-filter-btn active" data-filter="all">All Projects (8)</button>
+          <button class="project-filter-btn" data-filter="fullstack">Full-Stack</button>
+          <button class="project-filter-btn" data-filter="backend">Backend & APIs</button>
+          <button class="project-filter-btn" data-filter="ml">Machine Learning</button>
+          <button class="project-filter-btn" data-filter="automation">Automation</button>
         </div>
 
-        <!-- Experience Group -->
-        <div id="experience-group" class="timeline-content-group">
-          <div class="timeline-wrapper">
-            <div class="timeline-item">
-              <div class="timeline-node"><i class="fas fa-laptop-code" style="font-size: 0.75rem; color: var(--primary);"></i></div>
-              <div class="timeline-card">
-                <div class="timeline-header">
-                  <h4 class="timeline-role">Full-Stack & Machine Learning Engineer</h4>
-                  <span class="timeline-period">2023 - Present</span>
-                </div>
-                <div class="timeline-company"><i class="fas fa-building"></i> Independent Software Engineering & Open Source</div>
-                <div class="timeline-desc">
-                  <ul>
-                    <li>Designed and deployed high-performance REST microservices (URL Shortener, Job Tracker API) leveraging FastAPI, Redis, and PostgreSQL.</li>
-                    <li>Developed asynchronous web automation crawlers using Playwright and AsyncIO for large-scale data extraction.</li>
-                    <li>Built supervised machine learning regression and classification systems (House Prices, Customer Churn, Deforestation Detection) utilizing Scikit-Learn, XGBoost, and SHAP explainability.</li>
-                  </ul>
-                </div>
+        <!-- Dynamic GitHub Project Cards Grid -->
+        <div class="repo-cards-div" id="projects-container">
+          <!-- Dynamically populated from assets/js/projects-data.js -->
+        </div>
+
+        <div class="more-projects-div">
+          <a href="https://github.com/bilalfarid-1?tab=repositories" target="_blank" rel="noopener noreferrer" class="main-button">
+            More Projects on GitHub <i class="fas fa-arrow-right"></i>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         5. CERTIFICATIONS & ACHIEVEMENTS (MasterPortfolio Certifications Section)
+         ========================================================================== -->
+    <section id="certifications" class="certifications-main-section">
+      <div class="container">
+        <div class="skills-heading-div">
+          <h1 class="skills-header">Certifications</h1>
+          <p class="skills-header-subtitle">
+            ACHIEVEMENTS, CERTIFICATIONS & VERIFIED CREDENTIALS
+          </p>
+        </div>
+
+        <div class="certs-cards-div">
+          <!-- Cert 1 -->
+          <div class="cert-card">
+            <div class="cert-header">
+              <div class="cert-icon-bg bg-amber-gradient">
+                <i class="fas fa-award"></i>
+              </div>
+              <div>
+                <h3 class="cert-title">Artificial Intelligence & ML Specialization</h3>
+                <h4 class="cert-issuer">NAVTTC National Certification</h4>
               </div>
             </div>
-
-            <div class="timeline-item">
-              <div class="timeline-node"><i class="fas fa-code" style="font-size: 0.75rem; color: var(--primary);"></i></div>
-              <div class="timeline-card">
-                <div class="timeline-header">
-                  <h4 class="timeline-role">Web & Mobile Application Developer</h4>
-                  <span class="timeline-period">2022 - 2023</span>
-                </div>
-                <div class="timeline-company"><i class="fas fa-globe"></i> Client & Project Collaborations</div>
-                <div class="timeline-desc">
-                  <ul>
-                    <li>Created modern responsive single-page applications and e-commerce stores with React, Tailwind CSS, and JavaScript.</li>
-                    <li>Developed cross-platform mobile prototypes with Flutter and Dart, ensuring smooth state synchronization and intuitive UX.</li>
-                    <li>Implemented automated testing with Pytest and Jest to maintain high code reliability and rapid continuous integration.</li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <!-- Education Group -->
-        <div id="education-group" class="timeline-content-group" style="display: none;">
-          <div class="timeline-wrapper">
-            <div class="timeline-item">
-              <div class="timeline-node"><i class="fas fa-graduation-cap" style="font-size: 0.75rem; color: var(--primary);"></i></div>
-              <div class="timeline-card">
-                <div class="timeline-header">
-                  <h4 class="timeline-role">Bachelor of Science in Software Engineering</h4>
-                  <span class="timeline-period">2020 - 2024</span>
-                </div>
-                <div class="timeline-company"><i class="fas fa-university"></i> Computer Science & Software Engineering Department</div>
-                <div class="timeline-desc">
-                  <p>Comprehensive foundation in Software Architecture, Data Structures & Algorithms, Distributed Systems, Database Management Systems, Machine Learning, and Web Engineering.</p>
-                </div>
+            <div class="cert-body">
+              <p class="cert-description">
+                Comprehensive training covering statistical supervised and unsupervised learning, hyperparameter optimization with Optuna, and production ML pipelines.
+              </p>
+              <div class="cert-card-footer">
+                <a href="https://github.com/bilalfarid-1/navttc-ai-ml" target="_blank" rel="noopener noreferrer" class="cert-button">
+                  Certificate <i class="fas fa-arrow-up-right-from-square"></i>
+                </a>
               </div>
             </div>
           </div>
-        </div>
 
-        <!-- Certifications Group -->
-        <div id="certifications-group" class="timeline-content-group" style="display: none;">
-          <div class="timeline-wrapper">
-            <div class="timeline-item">
-              <div class="timeline-node"><i class="fas fa-award" style="font-size: 0.75rem; color: var(--primary);"></i></div>
-              <div class="timeline-card">
-                <div class="timeline-header">
-                  <h4 class="timeline-role">FastAPI & Python Microservices Architecture</h4>
-                  <span class="timeline-period">Verified Mastery</span>
-                </div>
-                <div class="timeline-company"><i class="fas fa-check-circle" style="color: var(--accent-emerald);"></i> Advanced Backend Engineering</div>
-                <div class="timeline-desc">
-                  <p>Advanced mastery in asynchronous Python, OpenAPI standards, JWT security protocols, Redis caching layers, and containerized Docker deployments.</p>
-                </div>
+          <!-- Cert 2 -->
+          <div class="cert-card">
+            <div class="cert-header">
+              <div class="cert-icon-bg bg-primary-gradient">
+                <i class="fas fa-code"></i>
+              </div>
+              <div>
+                <h3 class="cert-title">IBM Full Stack Software Developer Track</h3>
+                <h4 class="cert-issuer">IBM Professional Development</h4>
               </div>
             </div>
+            <div class="cert-body">
+              <p class="cert-description">
+                Cloud-native software engineering, REST microservice architecture, automated test suites, and containerized deployments with Docker.
+              </p>
+              <div class="cert-card-footer">
+                <a href="https://github.com/bilalfarid-1/first-repo" target="_blank" rel="noopener noreferrer" class="cert-button">
+                  Certificate <i class="fas fa-arrow-up-right-from-square"></i>
+                </a>
+              </div>
+            </div>
+          </div>
 
-            <div class="timeline-item">
-              <div class="timeline-node"><i class="fas fa-award" style="font-size: 0.75rem; color: var(--primary);"></i></div>
-              <div class="timeline-card">
-                <div class="timeline-header">
-                  <h4 class="timeline-role">Applied Machine Learning & Data Science</h4>
-                  <span class="timeline-period">Specialization</span>
-                </div>
-                <div class="timeline-company"><i class="fas fa-check-circle" style="color: var(--accent-emerald);"></i> ML Engineering & Predictive Modeling</div>
-                <div class="timeline-desc">
-                  <p>Practical expertise in ensemble methods (XGBoost, Random Forest), feature engineering, hyperparameter tuning, model explainability with SHAP, and computer vision.</p>
-                </div>
+          <!-- Cert 3 -->
+          <div class="cert-card">
+            <div class="cert-header">
+              <div class="cert-icon-bg bg-purple-gradient">
+                <i class="fas fa-server"></i>
+              </div>
+              <div>
+                <h3 class="cert-title">Python Core & Backend Architecture</h3>
+                <h4 class="cert-issuer">Production Engineering</h4>
+              </div>
+            </div>
+            <div class="cert-body">
+              <p class="cert-description">
+                Mastery of asynchronous FastAPI backends, SQLAlchemy 2.0 ORM, sliding-window rate limiting, and Base62 hashing algorithms.
+              </p>
+              <div class="cert-card-footer">
+                <a href="https://github.com/bilalfarid-1/job-application-tracker-api" target="_blank" rel="noopener noreferrer" class="cert-button">
+                  Certificate <i class="fas fa-arrow-up-right-from-square"></i>
+                </a>
               </div>
             </div>
           </div>
@@ -610,98 +630,107 @@
     </section>
 
     <!-- ==========================================================================
-         CONTACT SECTION & WORKING FORM
+         6. EDUCATION SECTION (MasterPortfolio Degree Cards)
          ========================================================================== -->
-    <section id="contact" class="section">
+    <section id="education" class="education-main-section">
       <div class="container">
-        <div class="section-header">
-          <span class="section-tag"><i class="fas fa-envelope"></i> Let's Connect</span>
-          <h2 class="section-title">Get In <span class="gradient-text">Touch</span></h2>
-          <p class="section-subtitle">Have an opportunity, project collaboration, or technical inquiry? Send a message below.</p>
+        <div class="skills-heading-div">
+          <h1 class="skills-header">Education</h1>
+          <p class="skills-header-subtitle">
+            ACADEMIC QUALIFICATIONS & DEGREE PROGRAMS
+          </p>
         </div>
 
+        <div class="education-cards-div">
+          <div class="education-card">
+            <div class="education-card-left">
+              <div class="univ-logo-wrap">
+                <i class="fas fa-graduation-cap"></i>
+              </div>
+            </div>
+            <div class="education-card-right">
+              <div class="edu-header">
+                <div>
+                  <h3 class="edu-school">University Computer Science Program</h3>
+                  <h4 class="edu-degree">Bachelor of Science in Computer Science (BS CS)</h4>
+                </div>
+                <div class="edu-duration">
+                  <span>2022 - 2026</span>
+                </div>
+              </div>
+              <p class="edu-description">
+                Completed core coursework in Data Structures & Algorithms (DSA), Object-Oriented Software Engineering, Database Systems (DBMS), Operating Systems, and Artificial Intelligence.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         7. CONTACT ME & REACH OUT SECTION (MasterPortfolio Reach Out Style)
+         ========================================================================== -->
+    <section id="contact" class="contact-main-section">
+      <div class="container">
         <div class="contact-grid">
-          <!-- Contact Details Card -->
-          <div class="contact-info-card">
-            <div>
-              <div class="contact-info-header">
-                <h3>Let's build something remarkable together.</h3>
-                <p>Feel free to reach out via the form or through direct contact channels below. I respond promptly to all messages.</p>
+          <!-- Left Content -->
+          <div class="contact-text-div">
+            <h1 class="contact-heading">Reach Out to Me!</h1>
+            <p class="contact-subtitle">
+              DISCUSS A PROJECT OR JUST WANT TO SAY HI? MY INBOX IS OPEN FOR ALL.
+            </p>
+
+            <div class="contact-details">
+              <div class="contact-detail-item">
+                <i class="fas fa-location-dot"></i>
+                <span>Drosh, KPK, Pakistan 🇵🇰 (Open to Remote Worldwide)</span>
               </div>
-
-              <div class="contact-details-list">
-                <div class="contact-item">
-                  <div class="contact-item-icon"><i class="fas fa-envelope"></i></div>
-                  <div class="contact-item-info">
-                    <span>Direct Email</span>
-                    <a href="mailto:bilaldrosh1@gmail.com">bilaldrosh1@gmail.com</a>
-                  </div>
-                </div>
-
-                <div class="contact-item">
-                  <div class="contact-item-icon"><i class="fab fa-github"></i></div>
-                  <div class="contact-item-info">
-                    <span>GitHub Profile</span>
-                    <a href="https://github.com/bilalfarid-1" target="_blank" rel="noopener noreferrer">@bilalfarid-1</a>
-                  </div>
-                </div>
-
-                <div class="contact-item">
-                  <div class="contact-item-icon"><i class="fas fa-phone-alt"></i></div>
-                  <div class="contact-item-info">
-                    <span>Direct Phone</span>
-                    <a href="tel:+923464619093">+92 346 4619093</a>
-                  </div>
-                </div>
-
-                <div class="contact-item">
-                  <div class="contact-item-icon"><i class="fas fa-map-marker-alt"></i></div>
-                  <div class="contact-item-info">
-                    <span>Location</span>
-                    <p>Drosh II, KPK, Pakistan</p>
-                  </div>
-                </div>
+              <div class="contact-detail-item">
+                <i class="fas fa-envelope"></i>
+                <a href="mailto:bilaldrosh1@gmail.com">bilaldrosh1@gmail.com</a>
+              </div>
+              <div class="contact-detail-item">
+                <i class="fas fa-phone"></i>
+                <a href="tel:+923464619093">+92 346 4619093</a>
               </div>
             </div>
 
-            <div style="padding: 16px; background: var(--bg-tertiary); border-radius: var(--radius-sm); border: var(--glass-border);">
-              <div style="display: flex; align-items: center; gap: 10px; font-size: 0.9rem; color: var(--text-secondary);">
-                <span class="status-dot"></span>
-                <span>Open for Full-Time, Contract & Freelance roles</span>
-              </div>
+            <!-- Social Media Icons -->
+            <div class="social-media-div" style="margin-top: 24px;">
+              <a href="https://github.com/bilalfarid-1" target="_blank" rel="noopener noreferrer" class="social-icon icon-github">
+                <i class="fab fa-github"></i>
+              </a>
+              <a href="mailto:bilaldrosh1@gmail.com" class="social-icon icon-gmail">
+                <i class="fas fa-envelope"></i>
+              </a>
+              <a href="https://wa.me/923464619093" target="_blank" rel="noopener noreferrer" class="social-icon icon-whatsapp">
+                <i class="fab fa-whatsapp"></i>
+              </a>
             </div>
           </div>
 
-          <!-- Working Interactive Contact Form -->
-          <div class="contact-form-card">
-            <form id="contact-form" novalidate>
+          <!-- Right Interactive Contact Form -->
+          <div class="contact-form-div">
+            <form id="contact-form" class="master-contact-form" novalidate>
+              <h3 class="form-title">Send a Message</h3>
               <div class="form-group">
-                <label for="contact-name" class="form-label">Full Name *</label>
-                <input type="text" id="contact-name" class="form-control" placeholder="e.g. Alex Morgan" required>
-                <div id="name-error" class="error-message"></div>
+                <input type="text" id="contact-name" name="name" class="master-input" placeholder="Your Name" required>
+                <span class="form-error" id="name-error"></span>
               </div>
-
               <div class="form-group">
-                <label for="contact-email" class="form-label">Email Address *</label>
-                <input type="email" id="contact-email" class="form-control" placeholder="e.g. alex@company.com" required>
-                <div id="email-error" class="error-message"></div>
+                <input type="email" id="contact-email" name="email" class="master-input" placeholder="Your Email Address" required>
+                <span class="form-error" id="email-error"></span>
               </div>
-
               <div class="form-group">
-                <label for="contact-subject" class="form-label">Subject / Project Type *</label>
-                <input type="text" id="contact-subject" class="form-control" placeholder="e.g. FastAPI Microservice / ML Pipeline" required>
-                <div id="subject-error" class="error-message"></div>
+                <input type="text" id="contact-subject" name="subject" class="master-input" placeholder="Subject" required>
+                <span class="form-error" id="subject-error"></span>
               </div>
-
               <div class="form-group">
-                <label for="contact-message" class="form-label">Your Message *</label>
-                <textarea id="contact-message" class="form-control" rows="5" placeholder="Describe your project, goals, or inquiry..." required></textarea>
-                <div id="message-error" class="error-message"></div>
+                <textarea id="contact-message" name="message" class="master-input master-textarea" rows="4" placeholder="Your Message..." required></textarea>
+                <span class="form-error" id="message-error"></span>
               </div>
-
-              <button type="submit" id="contact-submit-btn" class="btn-submit">
-                <i class="fas fa-paper-plane"></i>
-                <span>Send Message</span>
+              <button type="submit" id="btn-submit-contact" class="main-button" style="width: 100%; text-align: center; justify-content: center;">
+                Submit Message
               </button>
             </form>
           </div>
@@ -710,60 +739,26 @@
     </section>
   </main>
 
-  <!-- Project Architecture Modal Overlay -->
-  <div id="project-modal" class="modal-overlay" role="dialog" aria-modal="true" aria-labelledby="modal-title">
+  <!-- Architecture Modal Inspector -->
+  <div id="architecture-modal" class="modal-backdrop">
     <div class="modal-dialog">
-      <div class="modal-header">
-        <h3 id="modal-title" class="modal-title">Project Details</h3>
-        <button id="modal-close-btn" class="modal-close-btn" aria-label="Close modal">
-          <i class="fas fa-times"></i>
-        </button>
-      </div>
-      <div id="modal-body" class="modal-body"></div>
+      <button class="modal-close-btn" id="modal-close-btn" aria-label="Close dialog">&times;</button>
+      <div id="modal-content-target"></div>
     </div>
   </div>
 
-  <!-- Back To Top Button -->
-  <button id="back-to-top" class="back-to-top" aria-label="Scroll back to top" title="Back to top">
-    <i class="fas fa-arrow-up"></i>
-  </button>
+  <!-- Toast Notification Container -->
+  <div id="toast-container" class="toast-container"></div>
 
-  <!-- ==========================================================================
-       FOOTER
-       ========================================================================== -->
-  <footer class="footer">
-    <div class="container footer-content">
-      <a href="#hero" class="nav-logo">
-        <span class="logo-badge">BF</span>
-        <span>Muhammad Bilal Farid</span>
-      </a>
-
-      <div class="footer-socials">
-        <a href="https://github.com/bilalfarid-1" target="_blank" rel="noopener noreferrer" class="footer-social-link" title="GitHub">
-          <i class="fab fa-github"></i>
-        </a>
-        <a href="mailto:bilaldrosh1@gmail.com" class="footer-social-link" title="Email">
-          <i class="fas fa-envelope"></i>
-        </a>
-        <a href="https://www.linkedin.com" target="_blank" rel="noopener noreferrer" class="footer-social-link" title="LinkedIn">
-          <i class="fab fa-linkedin-in"></i>
-        </a>
-        <a href="https://www.instagram.com/bilal.farid_/" target="_blank" rel="noopener noreferrer" class="footer-social-link" title="Instagram">
-          <i class="fab fa-instagram"></i>
-        </a>
-      </div>
-
-      <p class="footer-copyright">
-        &copy; <span id="current-year">2026</span> Muhammad Bilal Farid. Crafted with precision, modern CSS & JavaScript. All rights reserved.
-      </p>
-    </div>
+  <!-- Footer (MasterPortfolio Style) -->
+  <footer class="footer-div">
+    <p class="footer-text">
+      Made with <span class="heart">❤️</span> by <span class="footer-name">Muhammad Bilal Farid</span>
+    </p>
   </footer>
 
   <!-- Scripts -->
   <script src="./assets/js/projects-data.js"></script>
   <script src="./assets/js/main.js"></script>
-  <script>
-    document.getElementById('current-year').textContent = new Date().getFullYear();
-  </script>
 </body>
 </html>

@@ -12,6 +12,7 @@ Tests:
 """
 
 import os
+import sys
 import re
 import json
 import unittest
@@ -19,6 +20,9 @@ from html.parser import HTMLParser
 import urllib.parse
 
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+if BASE_DIR not in sys.path:
+    sys.path.insert(0, BASE_DIR)
+
 
 class HTMLValidator(HTMLParser):
     def __init__(self):
@@ -185,6 +189,22 @@ class TestPortfolioWebsite(unittest.TestCase):
         ]
         for skill in expected_skills:
             self.assertIn(skill, content, f"Expected skill '{skill}' missing from index.html")
+
+    def test_synthesized_sections(self):
+        """Verify MasterPortfolio authentic sections are present in index.html."""
+        index_path = os.path.join(BASE_DIR, "index.html")
+        with open(index_path, "r", encoding="utf-8") as f:
+            content = f.read()
+
+        self.assertIn("What I Do", content)
+        self.assertIn("Data Science & AI", content)
+        self.assertIn("Full Stack Web Development", content)
+        self.assertIn("Cloud Infrastructure & APIs", content)
+        self.assertIn("Open Source Projects", content)
+        self.assertIn("Certifications", content)
+        self.assertIn("Education", content)
+        self.assertIn("Work Experiences", content)
+        self.assertIn("Reach Out to Me!", content)
 
     def test_server_health_handler(self):
         """Verify server.py handler code and live endpoint responses."""
