@@ -148,14 +148,14 @@ class TestPortfolioWebsite(unittest.TestCase):
             content = f.read()
 
         required_repos = [
-            "url-shortener-api",
-            "travel-data-scraper",
-            "job-application-tracker-api",
-            "house-prices-regression",
-            "FoodOrderingApp",
             "deforestation-project",
-            "customer-churn-prediction",
-            "shopping-app"
+            "aqi-predictor",
+            "swiftrip",
+            "vittoriax",
+            "url-shortener-api",
+            "FoodOrderingApp",
+            "job-application-tracker-api",
+            "travel-data-scraper"
         ]
 
         for repo in required_repos:
